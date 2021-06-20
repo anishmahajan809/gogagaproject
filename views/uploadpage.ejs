@@ -1,0 +1,43 @@
+
+    <link rel="stylesheet" href="/uploadimage.css">
+    <% layout('/layouts/boilerplate') %>
+
+<section class="container" id="form-container">
+        <div class="imagepreview">
+            <form action="/upload" method="POST">
+                <div class="col-md-6 input">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Name" type="text" name="name" required>
+                </div>
+                </div>
+                <div class="col-md-6 input">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Age" type="number"name="age" required>
+                    </div>
+                </div>
+                <div class="col-md-6 input">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Email" type="email"name="email" required>
+                    </div>
+                </div>
+                <div class="col-md-6 input">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="location" type="text"name="location" required>
+                    </div>
+                </div>
+                <div class="col-md-12 input">
+                    <div class="form-group">
+                        <input value="Upload" class="btn btn-primary" type="submit" id="image-upload-btn">
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+
+</section>
+    
+
+
+<script src="/uploadimage.js"></script>
+
+

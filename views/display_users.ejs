@@ -1,0 +1,47 @@
+<% layout('/layouts/boilerplate') %>
+	<!-- <div class="fh5co-team fh5co-light-grey-section"> -->
+		<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center ">
+						<h2>Registered Users</h2>
+					</div>
+					<div class="col-md-4 fh5co-staff text-center ">
+						
+                        
+                    <div class="page" style="color: black;">
+                        <section class="container">
+                            <table class="table table-hover" ,align="center">
+                                <div class="clearfix">
+                                    <tbody>
+                                    <thead>
+                                        <tr>
+                                            <th style="text-transform: uppercase;">Name</th>
+                                            <th style="text-transform: uppercase;">location</th>
+                                            <th style="text-transform: uppercase;">Email</th>
+                                            <th style="text-transform: uppercase;">age</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <% for (let user of data) { %>
+                                        <tr style="font-weight: 800;">
+                                            <td style="text-transform: uppercase;"><%= user.name %></td>
+                                            <td class="pclass"><%= user.location %></td>
+                                            <td><%= user.email %></td>
+                                            <td><%= user.age %></td>
+
+                                        </tr>
+                                    <% } %>
+                                    </tbody>
+                                </div>
+                            </table>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+	            </div>
+    <!-- </div> -->
+
+<script>
+</script>
+
+    
